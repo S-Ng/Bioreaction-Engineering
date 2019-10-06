@@ -25,7 +25,7 @@ s0 = 98.010;        % Substrate conc in the reactor at time zero (g/L)
  
 y0 = [x0 s0];
  
-% Call the ODE-solver and get results, “Model” is your m-file with the differential equations, the structure par contains all the parameters that you defined earlier
+% Call the ODE-solver and get results, â€œModelâ€ is your m-file with the differential equations, the structure par contains all the parameters that you defined earlier
 % t1 is a vector containing the time, and y1 is a matrix with all the variables 
  
 [t,y] = ode15s(@ModelAerobic,tint,y0,[],par);
